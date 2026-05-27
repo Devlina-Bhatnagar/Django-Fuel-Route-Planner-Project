@@ -1,6 +1,6 @@
 # Fuel Route Planner API
 
-Django API for the Spotter backend assessment.
+Django API for the Spotter backend
 
 ## What it does
 
@@ -20,7 +20,7 @@ Django API for the Spotter backend assessment.
 
 The route request assumes the vehicle starts with a full tank by default, so the first 500 miles are already covered and are not included in the fuel cost. The returned `total_fuel_cost` is the amount spent on fuel stops after the trip begins.
 
-You can change this through the request body using:
+We can change this through the request body using:
 
 ```json
 {
@@ -28,7 +28,7 @@ You can change this through the request body using:
 }
 ```
 
-For `initial_range_miles = 0`, you must have a geocoded station close to mile 0 of the route.
+For `initial_range_miles = 0`, we must have a geocoded station close to mile 0 of the route.
 
 ## Why station geocoding is a separate command
 
